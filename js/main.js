@@ -26,45 +26,6 @@ $(window).on('scroll', function () {
 
 
 
-// mainSlider
-function mainSlider() {
-	var BasicSlider = $('.slider-active');
-	BasicSlider.on('init', function (e, slick) {
-		var $firstAnimatingElements = $('.single-slider:first-child').find('[data-animation]');
-		doAnimations($firstAnimatingElements);
-	});
-	BasicSlider.on('beforeChange', function (e, slick, currentSlide, nextSlide) {
-		var $animatingElements = $('.single-slider[data-slick-index="' + nextSlide + '"]').find('[data-animation]');
-		doAnimations($animatingElements);
-	});
-	BasicSlider.slick({
-		autoplay: false,
-		autoplaySpeed: 10000,
-		dots: false,
-		fade: true,
-		arrows: false,
-		responsive: [
-			{ breakpoint: 767, settings: { dots: false, arrows: false } }
-		]
-	});
-
-	function doAnimations(elements) {
-		var animationEndEvents = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-		elements.each(function () {
-			var $this = $(this);
-			var $animationDelay = $this.data('delay');
-			var $animationType = 'animated ' + $this.data('animation');
-			$this.css({
-				'animation-delay': $animationDelay,
-				'-webkit-animation-delay': $animationDelay
-			});
-			$this.addClass($animationType).one(animationEndEvents, function () {
-				$this.removeClass($animationType);
-			});
-		});
-	}
-}
-mainSlider();
 
 
 // owlCarousel
@@ -104,30 +65,31 @@ $('.popup-video').magnificPopup({
 
 
 // isotop
-$('.grid').imagesLoaded( function() {
-	// init Isotope
-	var $grid = $('.grid').isotope({
-	  itemSelector: '.grid-item',
-	  percentPosition: true,
-	  masonry: {
-		// use outer width of grid-sizer for columnWidth
-		columnWidth: '.grid-item',
-	  }
-	});
-});
 
 // filter items on button click
 $('.portfolio-menu').on( 'click', 'button', function() {
-  var filterValue = $(this).attr('data-filter');
-  $grid.isotope({ filter: filterValue });
-});
+	var filterValue = $(this).attr('data-filter');
+	$grid.isotope({ filter: filterValue });
+  });	
+  
+  // init Isotope
+  var $grid = $('.grid').isotope({
+	itemSelector: '.grid-item',
+	percentPosition: false,
+	masonry: {
+	  // use outer width of grid-sizer for columnWidth
+	  columnWidth: '.grid-item',
+	}
+  });
+  
+  //for menu active class
+  $('.portfolio-menu button').on('click', function(event) {
+	  $(this).siblings('.active').removeClass('active');
+	  $(this).addClass('active');
+	  event.preventDefault();
+  });
 
-//for menu active class
-$('.portfolio-menu button').on('click', function(event) {
-	$(this).siblings('.active').removeClass('active');
-	$(this).addClass('active');
-	event.preventDefault();
-});
+
 
 
 
@@ -140,7 +102,7 @@ $.scrollUp({
 	animation: 'fade', // Fade, slide, none
 	animationInSpeed: 200, // Animation in speed (ms)
 	animationOutSpeed: 200, // Animation out speed (ms)
-	scrollText: '<i class="icofont icofont-long-arrow-up"></i>', // Text for element
+	scrollText: '<i class="fas fa-hand-point-up"></i>', // Text for element
 	activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
 });
 
