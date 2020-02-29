@@ -257,6 +257,12 @@ label {
 	text-align: center;
 	position: absolute;
 }
+.dot.dot-style .slick-dots{
+	bottom: 20px;
+}
+.dot.dot-2.dot-style .slick-dots{
+	bottom: 0px;
+}
 .dot-style .slick-dots li{
 	display: inline-block;
 	line-height: 0;
@@ -265,6 +271,9 @@ label {
 .dot-style .slick-dots li.slick-active button{
 	background: #0fb0ee;
 	height: 35px;
+}
+.dot.dot-style .slick-dots li.slick-active button{
+	height: 21px;
 }
 .dot-style .slick-dots button{
 	background: #dadada;
@@ -276,6 +285,10 @@ label {
 	text-indent: -10000px;
 	vertical-align: text-bottom;
 	transition: .7s;
+}
+.dot.dot-style .slick-dots button{
+	height: 8px;
+	width: 4px;
 }
 
 /* scrollUp */
@@ -404,7 +417,7 @@ label {
 		width: 100%;
 		content: "";
 		background: #000000;
-		opacity: .5;
+		opacity: 73%;
 		z-index: -2;
 	}
 	.slider-content h3 {
@@ -428,14 +441,25 @@ label {
 
 /* about-area */
 
-	.section-title h2 span{
+	.section-title h3 span{
 		color: #0fb0ee;
 	}
-	.section-title i{
+	.theme-bg .section-title h3 {
+		color: #ffffff;
+	}
+	.theme-bg .section-title h3 span{
+		color: #ffffff;
+	}
+	.section-title i {
 		position: relative;
 		font-weight: 900;
 		font-size: 15px;
 		background: #ffffff;
+		z-index: 9999999;
+	}
+	.theme-bg .section-title i {
+		color: #ffffff;
+		background: #0fb0ee;
 	}
 	.section-title i::after {
 		position: absolute;
@@ -446,11 +470,17 @@ label {
 		left: -37px;
 		right: 0;
 		bottom: 6px;
-		z-index: -2;
+		z-index: -1;
+	}
+	.theme-bg .section-title i::after {
+		background: #ffffff;
 	}
 	.section-title p {
-		padding-top: 10px;
 		color: #555555;
+		padding: 10px 15px 0;
+	}
+	.theme-bg .section-title p {
+		color: #ffffff;
 	}
 	.about-flaticon i{
 		font-size: 44px;
@@ -484,6 +514,9 @@ label {
 
 /* service-area */
 	
+	.gray-bg .section-title i {
+		background: #f6f6f6;
+	}
 	.section-padding{
 		position: relative;
 	}
@@ -610,8 +643,8 @@ label {
 	.team-img img{
 		margin-left: 25px;
 	}
-	.team-details{
-		padding: 40px 20px;
+	.team-details {
+		padding: 40px 0px;
 	}
 	.team-details h5{
 		margin: 0;
@@ -640,10 +673,387 @@ label {
 	}
 	.team-details p{
 		color: #ffffff;
-		padding: 5px 0;
+		padding: 5px 30px;
 	}
 	.team-social i{
 		margin: 0px 8px;
 		font-size: 17px;
 		font-weight: 400;
+	}
+	.team-area{
+		position: relative;
+	}
+	.team-area::before{
+		position: absolute;
+		background: #0fb0ee;
+		left: 0;
+		bottom: 0;
+		height: 223px;
+		width: 100%;
+		content: '';
+		z-index: -2;
+	}
+
+/* pricing-area */
+
+	.active-button h6{
+		font-size: 14px;
+		font-weight: 400;
+		text-transform: capitalize;
+		margin-top: 10px;
+	}
+	.active-button h6.active{
+		color: #0fb0ee;
+	}
+	.active-button span{
+		border: 1px solid #f6f6f6;
+		border-radius: 30px;
+		height: 38px;
+		width: 115px;
+		background: #e2f5fd;
+		margin: 0 20px;
+		position: relative;
+	}
+	.active-button span::before{
+		border-radius: 50%;
+		height: 24px;
+		width: 24px;
+		background: #000000;
+		margin: 0 20px;
+	}
+	.single-price{
+		padding: 0px 30px;
+	}
+	.single-price:hover{
+		background: #f6f6f6;
+	}
+	.single-price > i{
+		font-size: 49px;
+		color: #0fb0ee;
+		margin-bottom: 30px;
+		visibility: hidden;
+	}
+	.single-price:hover > i{
+		visibility: visible;
+	}
+	.price-title {
+		border-bottom: 1px solid #777777;
+	}
+	.single-price:hover .price-title {
+		border-bottom: 1px solid #555555;
+	}
+	.price-title h2{
+		font-weight: 400;
+		text-transform: capitalize;
+		color: #0fb0ee;
+	}
+	.price-title h5 {
+		font-weight: 400;
+		color: #0fb0ee;
+		padding-bottom: 15px;
+	}
+	.price-title input{
+		height: 50px;
+		width: 100%;
+		cursor: pointer;
+		background: #0fb0ee;
+		border: none;
+		font-size: 24px;
+		text-transform: uppercase;
+		color: #ffffff;
+	}
+	.price-title h6{
+		font-weight: 400;
+		font-size: 14px;
+		text-transform: unset;
+		color: #999999;
+		margin-top: 25px;
+		padding-bottom: 10px;
+	}
+	.price-details p{
+		border-top: 1px solid #e4e4e4;
+		border-bottom: 1px solid #b4b4b4;
+		margin: 0;
+		padding-top: 10px;
+		padding-bottom: 15px;
+	}
+	.single-price:hover .price-details p {
+		border-bottom: 1px solid #999999;
+		border-top: 1px solid #f6f6f6;
+	}
+	.price-details p:last-child{
+		border-bottom: none;
+		padding-bottom: 40px;
+	}
+	.single-price:hover .price-details p:last-child {
+		border-bottom: none;
+	}
+
+/* appoinment-area */
+	.appoinment-area {
+		position: relative;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-size: cover;
+		z-index: 1;
+	}
+	.appoinment-area::after{
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		content: "";
+		background: #0fb0ee;
+		opacity: 80%;
+		z-index: -2;
+	}
+	.appoinment-area h3{
+		color: #ffffff;
+		font-weight: 400;
+		padding-bottom: 25px;
+	}
+	.appoinment-area h3 span{
+		font-weight: 700;
+	}
+	.appoinment-form input{
+		background: #7fddf6;
+		width: 100%;
+		height: 50px;
+		margin-bottom: 30px;
+		color: #fff;
+		padding: 11px 20px;
+		border: 1px solid #95dff2;
+		border-radius: 30px;
+	}
+	.appoinment-form input::placeholder{
+		color: #ffffff;
+		font-weight: 400;
+		text-transform: uppercase;
+		font-family: 'Roboto Condensed', ;
+	}
+	.appoinment-form input[type=submit]{
+		background: #ffffff;
+		color: #0fb0ee;
+		text-transform: uppercase;
+		font-family: 'Roboto Condensed', ;
+		cursor: pointer;
+	}
+	.date-box {
+		position: relative;
+	}
+	.date-box .cal-icon {
+		position: absolute;
+		right: 40px;
+		top: 15px;
+		font-size: 15px;
+		color: #0b0a0a;
+	}
+	.schedule{
+		color: #ffffff;
+		font-weight: 500;
+	}
+	.week-schedule p{
+		color: #ffffff;
+		font-weight: 700;
+		margin: 0;
+		margin-bottom: 6px;
+	}
+	.week-schedule p span{
+		font-weight: 400;
+		text-align: right;
+	}
+	
+/* blog-area */
+	.bc-head h5{
+		padding-bottom: 15px;
+	}
+	.bc-date{
+		border-left: 2px solid #0fb0ee;
+		padding-left: 20px;
+	}
+	.bc-date-2{
+		border-right: 2px solid #0fb0ee;
+		padding-right: 20px;
+	}
+	.bc-date i{
+		font-size: 14px;
+		color: #3e3f3f;
+		padding-right: 8px;
+	}
+	.bc-date-2 i{
+		font-size: 14px;
+		color: #3e3f3f;
+		padding-left: 8px;
+	}
+	.bc-date h6{
+		font-size: 14px;
+		padding-bottom: 10px;
+		padding-right: 23px;
+	}
+	.bc-date-2 h6{
+		font-size: 14px;
+		padding-bottom: 10px;
+		padding-left: 23px;
+	}
+	.comment{
+		position: relative;
+		padding-left: 30px;
+	}
+	.comment::before{
+		position: absolute;
+		left: 0px;
+		top: 0;
+		content: "\f4ad";
+		font-family: "Font Awesome 5 Free";
+		font-size: 15px;
+		font-weight: 400;
+	}
+	.comment-2{
+		position: relative;
+		padding-right: 30px;
+	}
+	.comment-2::after{
+		position: absolute;
+		right: 0;
+		top: 0;
+		content: "\f4ad";
+		font-family: "Font Awesome 5 Free";
+		font-size: 15px;
+		font-weight: 400;
+	}
+	.bc-date h5, .bc-date-2 h5{
+		font-size: 14px;
+		color: #0fb0ee;
+		font-weight: 400;
+	}
+	.blog-content p{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.read-more-btn{
+		text-transform: uppercase;
+		color: #555555;
+		font-size: 14px;
+		font-family: 'Roboto Condensed', ;
+		position: relative;
+	}
+	.read-more-btn::after{
+		background: #555555;
+		position: absolute;
+		height: 1px;
+		width: 45px;
+		content: "";
+		top: 50%;
+		right: -65px;
+		transform: translateY(50%);
+	}
+	.more-btn{
+		text-transform: uppercase;
+		color: #555555;
+		font-size: 14px;
+		font-family: 'Roboto Condensed', ;
+		position: relative;
+	}
+	.more-btn::before{
+		background: #555555;
+		position: absolute;
+		height: 1px;
+		width: 45px;
+		content: "";
+		top: 50%;
+		left: -65px;
+		transform: translateY(50%);
+	}
+	
+/* client-area */
+	.single-client a img{
+		margin-left: 50px;
+	}
+	.single-client a img:hover{
+		color: #0fb0ee;
+	}
+	.client-area{
+		position: relative;
+	}
+	.client-area .brand-area{
+		position: absolute;
+		top: 280px;
+		box-shadow: 8px 8px 32px #f7f7f7;
+	}
+
+/* testimonial-area */
+	.testimonial-item{
+		box-shadow: 8px 8px 16px #f7f7f7;
+		padding: 0 60px;
+	}
+	.testimonial-active.dot.dot-2.dot-style .slick-dots{
+		bottom: -30px;
+	}
+
+/* GIT-area */
+	.git-form label{
+		display: block;
+		text-transform: capitalize;
+	}
+	.git-form label span{
+		color: #0fb0ee;
+	}
+	.git-form input{
+		height: 38px;
+		width: 100%;
+		margin-bottom: 25px;
+		padding: 0px 10px;
+		border: 1px solid #999999;
+		border: 1px solid #999999;
+	}
+	.git-form textarea{
+		height: 160px;
+		width: 100%;
+		margin-bottom: 25px;
+		padding: 10px 10px;
+		border-color: #a7a7a7;
+	}
+	.git-form input[type=submit]{
+		height: 40px;
+		width: auto;
+		padding: 0px 28px;
+		color: #ffffff;
+		text-transform: uppercase;
+		background: #0fb0ee;
+		border: none;
+		text-align: right;
+	}
+
+/* footer-area */
+	.footer-content{
+		border-bottom: 1px solid #4cccfe;
+	}
+	.footer-content h5{
+		color: #ffffff;
+	}
+	.footer-content p{
+		color: #ffffff;
+		padding: 0 20px;
+	}
+	.footer-content ul li{
+		color: #ffffff;
+	}
+	.footer-content .top-social-icon ul li{
+		display: inline-block;
+		margin-top: 30px;
+		margin: auto;
+		margin: 30px 10px 0;
+	}
+	.footer-content .top-social-icon ul li a i{
+		color: #ffffff;
+	}
+	.footer-content .top-social-icon ul li a i:hover{
+		background: #ffffff;
+		color: #0fb0ee;
+	}
+	.copyright-text p{
+		color: #ffffff;
 	}
