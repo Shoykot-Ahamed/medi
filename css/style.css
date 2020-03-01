@@ -1028,6 +1028,37 @@ label {
 	}
 
 /* footer-area */
+
+	.map-area{
+		position: relative;
+	}
+	.map-content {
+		position: absolute;
+		top: 50%;
+		width: 100%;
+		transform: translateY(-50%);
+		vertical-align: middle;
+		opacity: 57%;
+		overflow: hidden;
+	}
+	.map-content p{
+		font-size: 24px;
+		color: #ffffff;
+		background: #0fb0ee;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		opacity: 100%;
+		margin: 0;
+	}
+	.map-content p i{
+		font-size: 60px;
+		color: #555555;
+		padding-top: 20px;
+	}
+	#map{
+		height: 204px;
+		width: 100%;
+	}
 	.footer-content{
 		border-bottom: 1px solid #4cccfe;
 	}

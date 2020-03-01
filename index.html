@@ -78,12 +78,12 @@
             <div class="header-bottom-area pt-25 pb-25">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xl-3">
+                        <div class="col-xl-2">
                             <div class="logo-area">
                                 <a href="index.html"><img src="img/logo.png" alt=""></a>
                             </div>
                         </div>
-                        <div class="col-xl-9">
+                        <div class="col-xl-10">
                             <div class="main-menu f-right">
                                 <nav id="mobile-menu">
                                     <ul>
@@ -558,7 +558,7 @@
                 <div class="row">
                     <div class="col-xl-6 offset-xl-3">
                         <div class="section-title text-center mb-70">
-                            <h3><span>our</span> team</h3>
+                            <h3><span>our</span> pricing plan</h3>
                             <i class="flaticon-bleach"></i>
                             <p>We are Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras condimentum risus a felis gravida eu pellentesque neque justo tristique diam.</p>
                         </div>
@@ -845,7 +845,7 @@
                     </div>
                 </div>
 
-                <div class="custom-row dot dot-2 dot-style"">
+                <div class="custom-row">
                     <div class="testimonial-active dot dot-2 dot-style">
                         <div class="col-xl-8 offset-xl-2">
                             <div class="testimonial-item pb-70 text-center">
@@ -923,6 +923,30 @@
                 </div>
             </div>
 
+            <div class="map-area">
+                <div id="map"></div>
+                <div class="map-content">
+                    <div class="row">
+                        <div class="col-xl-6 offset-xl-3 text-center">
+                            <p><i class="fas fa-map-marker-alt"></i>721/A Central Street,Brooklyn Park</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                function initMap() {
+                    var location = {lat: -25.363, lng: 131.044};
+                    var map = new google.maps.Map(document.getElementById('map'), {
+                        zoom: 8,
+                        center: location,
+                    });
+                    var marker = new google.maps.marker({
+                        position: location,
+                        map: map,
+                    });
+                }
+            </script>
+            
             <div class="footer-content theme-bg pt-70 text-center">
                 <div class="container">
                     <div class="row">
@@ -981,6 +1005,7 @@
         <script src="js/jquery.meanmenu.min.js"></script>
         <script src="js/ajax-form.js"></script>
         <script src="js/wow.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYzXj5wF4L6mChyyc5xwfb2QT1QEZ9VN8&callback=initMap" async defer></script>
         <script src="js/jquery.scrollUp.min.js"></script>
         <script src="js/imagesloaded.pkgd.min.js"></script>
         <script src="js/jquery.magnific-popup.min.js"></script>
