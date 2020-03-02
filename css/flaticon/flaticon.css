@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 24/02/2020 19:32
+  	Creation date: 01/03/2020 15:15
   	*/
 
 @font-face {
@@ -28,18 +28,20 @@
 font-style: normal;
 }
 
-.flaticon-doctor:before { content: "\f100"; }
-.flaticon-mask:before { content: "\f101"; }
-.flaticon-group:before { content: "\f102"; }
-.flaticon-watch:before { content: "\f103"; }
-.flaticon-first-aid-kit:before { content: "\f104"; }
-.flaticon-ambulance:before { content: "\f105"; }
-.flaticon-dental:before { content: "\f106"; }
-.flaticon-document:before { content: "\f107"; }
-.flaticon-share:before { content: "\f108"; }
-.flaticon-bleach:before { content: "\f109"; }
-.flaticon-visualization:before { content: "\f10a"; }
-.flaticon-bookmark:before { content: "\f10b"; }
-.flaticon-24-hours:before { content: "\f10c"; }
-.flaticon-badge:before { content: "\f10d"; }
-.flaticon-house-insurance:before { content: "\f10e"; }
+.flaticon-team:before { content: "\f100"; }
+.flaticon-medical-doctor-standing-with-suitcase-and-stethoscope:before { content: "\f101"; }
+.flaticon-doctor:before { content: "\f102"; }
+.flaticon-mask:before { content: "\f103"; }
+.flaticon-group:before { content: "\f104"; }
+.flaticon-watch:before { content: "\f105"; }
+.flaticon-first-aid-kit:before { content: "\f106"; }
+.flaticon-ambulance:before { content: "\f107"; }
+.flaticon-file:before { content: "\f108"; }
+.flaticon-share:before { content: "\f109"; }
+.flaticon-bleach:before { content: "\f10a"; }
+.flaticon-visualization:before { content: "\f10b"; }
+.flaticon-bookmark:before { content: "\f10c"; }
+.flaticon-24-hours:before { content: "\f10d"; }
+.flaticon-badge:before { content: "\f10e"; }
+.flaticon-insurance:before { content: "\f10f"; }
+.flaticon-teeth:before { content: "\f110"; }
