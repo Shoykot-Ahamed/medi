@@ -521,8 +521,8 @@ label {
 		width: 100%;
 		content: "";
 		background: #000000;
-		opacity: 73%;
-		z-index: -2;
+		opacity: 75%;
+		z-index: -1;
 	}
 	.slider-content h3 {
 		font-size: 36px;
@@ -569,12 +569,14 @@ label {
 		color: #555555;
 		margin-left: 24px;
 	}
-	.slide-arrow{
+	.slide-arrow {
 		font-size: 30px;
 		color: #ffffff;
 		height: 90px;
 		width: 90px;
-		line-height: 90px;
+		line-height: 36px;
+		padding-top: 6px;
+		letter-spacing: 1px;
 		background: #2b6d87;
 		text-align: center;
 		text-transform: uppercase;
@@ -1182,9 +1184,9 @@ label {
 		color: #0fb0ee;
 		font-weight: 400;
 	}
-	.blog-content p{
+	.blog-content p {
 		padding-top: 20px;
-		padding-bottom: 20px;
+		padding-bottom: 5px;
 	}
 	.read-more-btn{
 		text-transform: uppercase;
@@ -1284,12 +1286,13 @@ label {
 		margin-bottom: 35px;
 	}
 	.testimonial-item {
-		box-shadow: 2px 4px 32px #555555;
+		box-shadow: 1px 2px 16px #555555;
 		padding: 0 60px;
 		padding-bottom: 70px;
+		margin: 15px 0;
 	}
-	.testimonial-active.dot.dot-2.dot-style .slick-dots{
-		bottom: 20px;
+	.testimonial-active.dot.dot-2.dot-style .slick-dots {
+		bottom: 35px;
 	}
 
 /* GIT-area */
@@ -1436,4 +1439,126 @@ label {
 	}
 	.copyright-text p{
 		color: #ffffff;
+	}
+
+
+
+/* blog-page */
+
+	/* page-title */
+	
+	.blog-head-area{
+		position: relative;
+	}
+	.page-title-area{
+		z-index: 199999;
+	}
+	.page-title h1{
+		font-size: 80px;
+		color: #ffffff;
+	}
+	.page-title .breadcrumb{
+		background: none;
+	}
+	.page-title .breadcrumb-item a{
+		font-size: 22px;
+		font-weight: 500;
+		color: #ffffff;
+	}
+
+	/* blog-area */
+
+	.single-blog{
+		border-bottom: 1px solid #dfdfdf;
+	}
+	.blog-image {
+		position: relative;
+	}
+	.blog-image img{
+		width: 100%;
+		min-height: 445px;
+	}
+	.date {
+		position: absolute;
+		height: 63px;
+		width: 80px;
+		top: 30px;
+		left: 30px;
+	}
+	.date h1{
+		font-size: 42px;
+		color: #ffffff;
+		margin: 0;
+		line-height: 1;
+	}
+	.date h1 span{
+		display: block;
+		font-size: 14px;
+		text-transform: capitalize;
+	}
+	.bc-date span {
+		display: inherit;
+		padding-left: 214px;
+	}
+	.bc-date span a i {
+		font-size: 12px;
+		color: #999999;
+	}
+	.bc-date span a i:hover {
+		color: #3b5998;
+	}
+	audio {
+		width: 100%;
+	}
+
+
+	.blog-video{
+		position: relative;
+	}
+	video {
+		width: 100%;
+	}
+	.admin-details{
+		position: absolute;
+		top: 30px;
+		left: 30px;
+	}
+	.admin-details a img{
+		float: left;
+	}
+	.admin-details h5{
+		color: #0fb0ee;
+	}
+	.id {
+		margin-left: 5px;
+	}
+	.admin-details h6{
+		text-transform: unset;
+		font-size: 12px;
+		color: #0fb0ee;
+	}
+	.admin-details h6 span{
+		text-transform: none;
+		font-size: 12px;
+		color: #ffffff;
+	}
+	.v-button{
+		position: absolute;
+		top: 30px;
+		right: 20px;
+	}
+	.single-btn button {
+		color: #ffffff;
+		text-transform: uppercase;
+		font-size: 8.5px;
+		background: #363f3f;
+		border: none;
+		height: 35px;
+		width: 45px;
+		line-height: 1.6;
+		border-radius: 5px;
+		margin-bottom: 2px;
+	}
+	.single-btn i{
+		font-size: 15px;
 	}
