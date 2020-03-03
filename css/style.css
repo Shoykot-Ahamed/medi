@@ -1114,9 +1114,9 @@ label {
 		margin: 0;
 		margin-bottom: 6px;
 	}
-	.week-schedule p span{
+	.week-schedule p span {
 		font-weight: 400;
-		text-align: right;
+		float: right;
 	}
 	
 /* blog-area */
@@ -1220,6 +1220,46 @@ label {
 		left: -65px;
 		transform: translateY(50%);
 	}
+
+	.blog-area.home-2{
+		border-bottom: 1px solid #c6c6c6;
+	}
+	.first-blog{
+		border-bottom: 1px solid #c6c6c6;
+	}
+	.first-blog h4{
+		font-size: 24px;
+	}
+	.first-blog h6{
+		font-size: 14px;
+		font-weight: 400;
+		padding: 5px 0;
+	}
+	.first-blog i{
+		padding-right: 5px;
+	}
+	.first-blog h5{
+		font-size: 14px;
+		text-transform: capitalize;
+		font-weight: 400;
+	}
+	.first-blog.blog-2{
+		position: relative;
+	}
+	.first-blog.blog-2 h6,.first-blog.blog-2 h4,.first-blog.blog-2 h5{
+		color: #ffffff;
+	}
+	.first-blog.blog-2::after{
+		background: #0fb0ee;
+		height: 100%;
+		width: 100%;
+		content: "";
+		position: absolute;
+		top: 0;
+		z-index: -1;
+		opacity: 75%;
+	}
+	
 	
 /* client-area */
 	.single-client a img{
@@ -1231,19 +1271,25 @@ label {
 	.client-area{
 		position: relative;
 	}
-	.client-area .brand-area{
+	.client-area .brand-area {
 		position: absolute;
 		top: 280px;
-		box-shadow: 8px 8px 32px #dddddd;
+		box-shadow: 4px 4px 32px #555555;
 	}
 
 /* testimonial-area */
-	.testimonial-item{
-		box-shadow: 8px 8px 16px #f7f7f7;
+
+	.testimonial-img img{
+		display: inline-block;
+		margin-bottom: 35px;
+	}
+	.testimonial-item {
+		box-shadow: 2px 4px 32px #555555;
 		padding: 0 60px;
+		padding-bottom: 70px;
 	}
 	.testimonial-active.dot.dot-2.dot-style .slick-dots{
-		bottom: -30px;
+		bottom: 20px;
 	}
 
 /* GIT-area */
@@ -1260,7 +1306,12 @@ label {
 		margin-bottom: 25px;
 		padding: 0px 10px;
 		border: 1px solid #999999;
-		border: 1px solid #999999;
+	}
+	.git-form.form-2 input{
+		height: 40px;
+		width: 100%;
+		margin-bottom: 40px;
+		padding: 0px 20px;
 	}
 	.git-form textarea{
 		height: 160px;
@@ -1269,7 +1320,10 @@ label {
 		padding: 10px 10px;
 		border-color: #a7a7a7;
 	}
-	.git-form input[type=submit]{
+	.git-form.form-2 textarea{
+		height: 163px;
+	}
+	.git-form input[type=submit] {
 		height: 40px;
 		width: auto;
 		padding: 0px 28px;
@@ -1277,7 +1331,24 @@ label {
 		text-transform: uppercase;
 		background: #0fb0ee;
 		border: none;
-		text-align: right;
+		float: right;
+	}
+	.home-2 .git-form input[type=submit] {
+		float: left;
+	}
+	.git-right .git-ri img{
+		float: left;
+		padding-top: 30px;
+	}
+	.git-right .git-ri.ri3 img{
+		padding-top: 20px;
+	}
+	.git-right .git-rc{
+		overflow: hidden;
+		margin-left: 65px;
+	}
+	.git-right .git-rc ul li, .git-right .git-rc p{
+		font-size: 14px;
 	}
 
 /* footer-area */
@@ -1294,6 +1365,19 @@ label {
 		opacity: 57%;
 		overflow: hidden;
 	}
+	.map-content.mc {
+		opacity: 100%;
+	}
+	.map-area.ma::after {
+		position: absolute;
+		background: #0fb0ee;
+		left: 0;
+		top: 0;
+		content: "";
+		height: 100%;
+		width: 100%;
+		opacity: 65%;
+	}
 	.map-content p{
 		font-size: 24px;
 		color: #ffffff;
@@ -1302,6 +1386,15 @@ label {
 		padding-bottom: 30px;
 		opacity: 100%;
 		margin: 0;
+	}
+	.map-content.mc p{
+		color: #ffffff;
+		background: none;
+		padding: 0;
+	}
+	.map-content.mc i{
+		color: #ffffff;
+		font-size: 60px;
 	}
 	.map-content p i{
 		font-size: 60px;
@@ -1330,6 +1423,9 @@ label {
 		margin-top: 30px;
 		margin: auto;
 		margin: 30px 10px 0;
+	}
+	.footer-content.fc2 .top-social-icon ul li {
+		margin: 40px 3px 0;
 	}
 	.footer-content .top-social-icon ul li a i{
 		color: #ffffff;
