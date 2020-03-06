@@ -342,6 +342,7 @@ label {
 		width: 33px;
 		line-height: 33px;
 		text-align: center;
+		transition: .7s;
 	}
 	.top-social-icon ul li i:hover{
 		color: #ffffff;
@@ -359,7 +360,6 @@ label {
 	}
 	.search-form button {
 		position: absolute;
-		background: none;
 		border: none;
 		right: -6px;
 		top: -1px;
@@ -868,7 +868,9 @@ label {
 
 
 /* team-area */
-
+	.team-area.gray-bg{
+		z-index: -;
+	}
 	.team-img img{
 		margin-left: 25px;
 	}
@@ -926,7 +928,6 @@ label {
 		height: 222px;
 		width: 100%;
 		content: '';
-		z-index: -2;
 	}
 	.team-area.home-2::before{
 		background: none;
@@ -1473,9 +1474,13 @@ label {
 	.page-title-area{
 		z-index: 199999;
 	}
-	.page-title h1{
+	.page-title-area.slider-height{
+		transform: skewY(0);
+	}
+	.page-title h1 {
 		font-size: 80px;
 		color: #ffffff;
+		margin: -10px;
 	}
 	.page-title .breadcrumb{
 		background: none;
@@ -1814,3 +1819,19 @@ label {
 	.post-comments-form form input::placeholder,.post-comments-form form textarea::placeholder{color: #7c8c99;}
 	.post-comments-form form input:focus,.post-comments-form form textarea:focus{color: #0fb0ee; border-color: #0fb0ee;}
 	.post-comments-form form input:focus::placeholder,.post-comments-form form textarea:focus::placeholder{color: #0fb0ee; border: #0fb0ee;}
+
+/* about-page */
+
+	/* we-about-area */
+
+	.wwa-area.slider-height{
+		transform: skewX(0);
+	}
+	.wwa-area.slider-height::after{
+		background: #0fb0ee;
+		opacity: 85%;
+	}
+	.wwa-area .image-area img{
+		width: 440px;
+		height: 475px;
+	}
