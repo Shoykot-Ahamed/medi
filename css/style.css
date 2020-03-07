@@ -646,7 +646,7 @@ label {
 	}
 	.section-title p {
 		color: #555555;
-		padding: 10px 15px 0;
+		padding: 10px 13px 0;
 	}
 	.theme-bg .section-title p {
 		color: #ffffff;
@@ -686,21 +686,23 @@ label {
 	.about-img img{
 		width: 100%;
 	}
-	.about-img img::after{
+	.about-img:after {
 		position: absolute;
-		left: 0;
-		top: 0;
 		height: 100%;
 		width: 100%;
-		color: #0fb0ee;
+		left: 0;
+		top: 0;
+		background: #0fb0ee;
 		content: "";
+		opacity: 25%;
 	}
-	.about-img i{
+	.about-img i {
 		font-size: 26px;
 		color: #ffffff;
 		background: #0fb0ee;
 		padding: 10px 20px;
 		border-radius: 0 30px 30px 0;
+		z-index: 1;
 	}
 	.about-img i{
 		position: absolute;
@@ -734,7 +736,6 @@ label {
 		background-size: cover;
 	}
 	.service {
-		border: 1px solid #e3e3e3;
 		margin: 15px !important;
 		padding: 30px 20px 0px;
 	}
@@ -869,19 +870,42 @@ label {
 
 /* team-area */
 	.team-area.gray-bg{
-		z-index: -;
+		background: #eeeeee;
+	}
+	.team-area.gray-bg .section-title i{
+		background: #eeeeee;
 	}
 	.team-img img{
 		margin-left: 25px;
+		height: 355px;
 	}
 	.team-details {
 		padding: 40px 0px;
+		position: relative;
 	}
-	.slick-slide.slick-current.slick-active .team-details {
-		border-top: 5px solid #fff;
-		border-bottom: 5px solid #fff;
-		padding: 35px 0;
-		transition: .7s;
+	.slick-slide.slick-current.slick-active .team-details::after {
+		position: absolute;
+		content: "";
+		height: 5px;
+		width: 125px;
+		background: #fff;
+		bottom: 0;
+		right: 25%;
+	}
+	.slick-slide.slick-current.slick-active .team-details::before {
+		position: absolute;
+		content: "";
+		height: 5px;
+		width: 125px;
+		background: #ffffff;
+		top: 0;
+		left: 24%;
+	}
+	.team-area.home-2 .slick-slide.slick-current.slick-active .team-details::after {
+		background: none;
+	}
+	.team-area.home-2 .slick-slide.slick-current.slick-active .team-details::before {
+		background: none;
 	}
 	.team-details h5{
 		margin: 0;
@@ -1285,8 +1309,12 @@ label {
 	
 	
 /* client-area */
-	.single-client a img{
-		margin-left: 50px;
+
+	.client-active.brand-border {
+		margin: 0 90px;
+	}
+	.single-client a img {
+		margin-left: 55px;
 	}
 	.single-client a img:hover{
 		color: #0fb0ee;
@@ -1308,9 +1336,9 @@ label {
 	}
 	.testimonial-item {
 		box-shadow: 1px 2px 16px #555555;
-		padding: 0 60px;
+		padding: 0 70px;
 		padding-bottom: 70px;
-		margin: 15px 0;
+		margin: 15px 190px;
 	}
 	.testimonial-active.dot.dot-2.dot-style .slick-dots {
 		bottom: 35px;
@@ -1834,4 +1862,68 @@ label {
 	.wwa-area .image-area img{
 		width: 440px;
 		height: 475px;
+	}
+
+
+
+/* service-page */
+	
+	.service-contact-area.slider-height{
+		transform: skewY(0);
+	}
+	.service-contact-area.slider-height::after{
+		background: #0fb0ee;
+		opacity: 85%;
+	}
+	.service-contact p {
+		color: #ffffff;
+		text-transform: uppercase;
+		line-height: 24px;
+		margin: 0;
+		letter-spacing: 4px;
+	}
+	.service-contact h2 {
+		color: #ffffff;
+		text-transform: unset;
+		font-weight: 400;
+		font-size: 32px;
+		letter-spacing: 1px;
+	}
+	.service-contact button.brand-btn{
+		border: 1px solid #fff;
+		background: none;
+		margin-top: 30px;
+	}
+	.service-contact .text-right button.brand-btn{
+		margin-top: 10px;
+	}
+	.service.page{
+		border: 1px solid #e3e3e3;
+	}
+
+/* contact-page */
+
+	.git-area .section-title h1{
+		text-transform: capitalize;
+		font-weight: 400;
+	}
+	.git-area.home-2 .section-title h1{
+		font-size: 36px;
+	}
+
+/* about-page */
+
+	.brand-area.about{
+		box-shadow: unset;
+	}
+	.brand-area.about .dot-style .slick-dots li.slick-active button {
+		background: none;
+	}
+	.brand-area.about .dot-style .slick-dots button {
+		background: none;
+	}
+	.brand-area.about .single-client a img{
+		background: #f4f4f4;
+		padding: 20px 30px;
+		margin: 0;
 	}
