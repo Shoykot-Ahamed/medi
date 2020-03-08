@@ -1312,6 +1312,7 @@ label {
 
 	.client-active.brand-border {
 		margin: 0 90px;
+		box-shadow: 4px 4px 32px #555555;
 	}
 	.single-client a img {
 		margin-left: 55px;
@@ -1325,7 +1326,6 @@ label {
 	.client-area .brand-area {
 		position: absolute;
 		top: 280px;
-		box-shadow: 4px 4px 32px #555555;
 	}
 
 /* testimonial-area */
@@ -1926,4 +1926,45 @@ label {
 		background: #f4f4f4;
 		padding: 20px 30px;
 		margin: 0;
+	}
+	.wwa-slide-image .slide-img img{
+		float: left;
+		height: 440px;
+		width: 476px;
+	}
+	.image-content {
+		overflow: hidden;
+		margin-left: 500px;
+	}
+	.image-content h3{
+		text-transform: capitalize;
+		font-weight: 400;
+		font-size: 28px;
+		color: #303030;
+		padding-top: 70px;
+		padding-bottom: 10px;
+	}
+	.image-content p{
+		padding-bottom: 5px;
+		padding-right: 10px;
+	}
+	.counter-area-main{
+		box-shadow: 2px 4px 32px #555555;
+	}
+	.counter-img img{
+		z-index: -1;
+	}
+	.counter-content {
+		box-shadow: 1px 2px 16px #555555;
+		padding-top: 15px;
+		margin-top: -60px;
+	}
+	.single-couter h1{
+		font-size: 60px;
+		font-weight: 400;
+	}
+	.single-couter h4{
+		font-size: 24px;
+		font-weight: 400;
+		color: #999999;
 	}
