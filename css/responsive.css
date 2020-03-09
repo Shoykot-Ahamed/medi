@@ -301,11 +301,16 @@
         font-size: 20px;
     }
     .portfolio-menu {
-        font-size: 7px;
         display: flex;
     }
     .portfolio-menu button.active::after {
         background: none;
+    }
+    .portfolio-menu button {
+        margin: 0;
+        padding: 0px 3px;
+        font-size: 9px;
+        margin-bottom: 15px;
     }
     .team-img img {
         margin-left: 25%;
