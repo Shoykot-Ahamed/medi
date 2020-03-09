@@ -319,10 +319,26 @@
     .slick-slide.slick-current.slick-active .team-details::after {
         right: 33%;
     }
+    .price-title h3 {
+        font-size: 22px;
+    }
+    .price-title h5 {
+        font-size: 14px;
+    }
+    .price-title input {
+        height: 40px;
+        font-size: 18px;
+    }
     .testimonial-item {
-        padding: 0;
+        padding: 0 2px;
         padding-bottom: 70px;
         margin: 15px 10px;
+    }
+    .testimonial-item p{
+        font-size: 13px;
+    }
+    .git-form input[type=submit] {
+        padding: 0px 20px;
     }
     .appoinment-area h3 {
         font-size: 25px;
