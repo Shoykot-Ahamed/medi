@@ -6,7 +6,87 @@
 
 
 /* Normal desktop :992px. */
-@media (min-width: 992px) and (max-width: 1200px) {
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .top-social-icon ul li {
+        margin-left: 35px;
+    }
+    .main-menu ul li {
+        margin-left: 10px;
+    }
+    .main-menu ul li a{
+        font-size: 14px;
+    }
+    .slider-content h3 {
+        font-size: 28px;
+    }
+    .slider-content h1 {
+        font-size: 55px;
+    }
+    .slide-arrow {
+        font-size: 23px;
+        height: 70px;
+        width: 70px;
+        line-height: 28px;
+    }
+    .section-title p {
+        font-size: 13px;
+        padding: 10px 0px 0;
+    }
+    .about-content {
+        margin-left: 55px;
+    }
+    .service-content {
+        margin-left: 55px;
+    }
+    .service-content h6 {
+        font-size: 15px;
+    }
+    .portfolio-menu button.active::after {
+        width: 44px;
+    }
+    .team-img img {
+        margin-left: 0px;
+    }
+    .team-details p {
+        color: #ffffff;
+        padding: 5px 20px;
+    }
+    .slick-slide.slick-current.slick-active .team-details::before {
+        left: 19%;
+    }
+    .slick-slide.slick-current.slick-active .team-details::after {
+        right: 19%;
+    }
+    .week-schedule p {
+        margin-bottom: 2px;
+    }
+    .team-area .team-arrow {
+        height: 60px;
+        width: 60px;
+        line-height: 60px;
+        font-size: 25px;
+    }
+    .team-area .team-arrow.arrow-prev {
+        left: 20px;
+    }
+    .team-area .team-arrow.arrow-next {
+        right: 20px;
+    }
+    .blog-img img {
+        margin-left: 0 !important;
+    }
+    .client-active.brand-border {
+        margin: 0 70px;
+    }
+    .single-client a img {
+        margin-left: 35px;
+    }
+    .testimonial-item {
+        padding: 0 27px;
+        padding-bottom: 70px;
+        margin: 15px 150px;
+    }
 
 
 }
@@ -14,6 +94,172 @@
  
 /* Tablet desktop :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
+
+    .brand-btn {
+        font-size: 12px;
+        padding: 14px 24px;
+    }
+    .header-contact ul li {
+        margin-right: 1px;
+    }
+    .top-social-icon ul li {
+        margin-left: 8px;
+    }
+    .single-slider{
+        padding: 0;
+    }
+    .slider-content {
+        padding-left: 10px;
+    }
+    .slider-content h3 {
+        font-size: 23px;
+    }
+    .slider-content h1 {
+        font-size: 40px;
+    }
+    .slider-content p {
+        font-size: 13px;
+    }
+    .slide-arrow {
+        font-size: 14px;
+        height: 40px;
+        width: 40px;
+        line-height: 15px;
+    }
+    .section-title p {
+        font-size: 13px;
+    }
+    .section-title h3 {
+        font-size: 29px;
+    }
+    .about-content {
+        margin-left: 55px;
+    }
+    .about-content p {
+        padding-right: 0px;
+    }
+    .service-content {
+        margin-left: 50px;
+    }
+    .service-content h6 {
+        font-size: 15px;
+    }
+    .service-content p {
+        margin-bottom: 30px;
+        line-height: 15px;
+    }
+    .portfolio-menu button.active::after {
+        width: 25px;
+        right: -5px;
+    }
+    .team-img img {
+        margin-left: 60px;
+    }
+    .team-details p {
+        color: #ffffff;
+        padding: 5px 70px;
+    }
+    .slick-slide.slick-current.slick-active .team-details::before {
+        left: 30%;
+    }
+    .slick-slide.slick-current.slick-active .team-details::after {
+        right: 30%;
+    }
+    .team-area .team-arrow {
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+        font-size: 25px;
+    }
+    .team-area .team-arrow.arrow-prev {
+        left: 20px;
+    }
+    .team-area .team-arrow.arrow-next {
+        right: 20px;
+    }
+    .single-price {
+        padding: 0px 10px;
+    }
+    .price-title h3 {
+        font-size: 24px;
+    }
+    .price-title input {
+        font-size: 20px;
+    }
+    .appoinment-form input {
+        padding: 11px 10px;
+    }
+    .appoinment-form input[type=submit] {
+        font-size: 12px;
+    }
+    .schedule{
+        margin-bottom: 6px;
+    }
+    .week-schedule p {
+        margin-bottom: 0px;
+    }
+    .blog-area .bc-head h5 {
+        padding-bottom: 2px;
+        font-size: 14px;
+    }
+    .bc-date-2 h6 {
+        font-size: 12px;
+        padding-bottom: 0;
+        padding-left: 23px;
+    }
+    .bc-date h6 {
+        font-size: 12px;
+        padding-bottom: 0;
+    }
+    .blog-content p {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        font-size: 13px;
+        line-height: 20px;
+        margin: 0;
+    }
+    .more-btn,.read-more-btn {
+        font-size: 12px;
+    }
+    .blog-content.pt-35 {
+        padding-top: 10px;
+    }
+    .blog-img img {
+        margin-left: -10px !important;
+        width: 105%;
+    }
+    .bc-date h6 {
+        padding-bottom: 0px;
+    }
+    .client-active.brand-border {
+        margin: 0 70px;
+    }
+    .single-client a img {
+        margin-left: 35px;
+    }
+    .testimonial-item {
+        padding: 0 5px;
+        padding-bottom: 70px;
+        margin: 15px 130px;
+    }
+    .footer-content p {
+        color: #ffffff;
+        padding: 0px 0px;
+    }
+    .footer-content .top-social-icon ul li {
+        margin: 30px 5px 0;
+    }
+	.mean-container a.meanmenu-reveal {
+		border: 1px solid #555555;
+		color: #555555;
+		top: 28px;
+        transition: none;
+        position: absolute;
+	}
+	.mean-container a.meanmenu-reveal.meanclose {
+		top: 0px;
+		transition: 0s;
+	}
 
 
 }
@@ -28,5 +274,54 @@
 /* Large Mobile :480px. */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 .container {width:450px}
+
+.header-contact ul li {
+    margin-right: 12px;
+}
+.header-top-area ul li {
+    font-size: 13px;
+}
+.top-social-icon {
+    padding-top: 10px;
+}
+.single-slider{
+    padding: 0;
+}
+.slider-content h3 {
+    font-size: 18px;
+}
+.slider-content h1 {
+    font-size: 34px;
+}
+.slider-content p {
+    font-size: 14px;
+}
+.brand-btn {
+    font-size: 12px;
+}
+.portfolio-menu {
+    font-size: 12px;
+    display: flex;
+}
+.portfolio-menu button.active::after {
+    background: none;
+}
+.team-img img {
+    margin-left: 25%;
+}
+.team-details p {
+    padding: 5px 100px;
+}
+.slick-slide.slick-current.slick-active .team-details::before {
+    left: 33%;
+}
+.slick-slide.slick-current.slick-active .team-details::after {
+    right: 33%;
+}
+.testimonial-item {
+    padding: 0;
+    padding-bottom: 70px;
+    margin: 15px 10px;
+}
  
 }

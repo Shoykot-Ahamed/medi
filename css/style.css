@@ -361,6 +361,7 @@ label {
 	.search-form button {
 		position: absolute;
 		border: none;
+		background: none;
 		right: -6px;
 		top: -1px;
 	}
@@ -578,6 +579,9 @@ label {
 		width: 10px;
 		background: #0fb0ee;
 	}
+	.single-slider{
+		padding: 100px 0;
+	}
 	.btn.brand-btn.btn-2{
 		background: #ffffff;
 		color: #555555;
@@ -778,7 +782,6 @@ label {
 		border-color: #0fb0ee;
 	}
 	.service-content h6{
-		padding-bottom: 0;
 		padding-top: 10px;
 	}
 	.home-2 .service-content h6::after{
@@ -1948,16 +1951,22 @@ label {
 		padding-bottom: 5px;
 		padding-right: 10px;
 	}
+	.counter-area{
+		position: relative;
+	}
 	.counter-area-main{
 		box-shadow: 2px 4px 32px #555555;
 	}
-	.counter-img img{
+	.counter-img{
 		z-index: -1;
 	}
 	.counter-content {
+		position: absolute;
 		box-shadow: 1px 2px 16px #555555;
 		padding-top: 15px;
-		margin-top: -60px;
+		margin-top: -68px;
+		width: 100%;
+		z-index: 9999;
 	}
 	.single-couter h1{
 		font-size: 60px;

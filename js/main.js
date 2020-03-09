@@ -4,7 +4,7 @@
 // meanmenu
 $('#mobile-menu').meanmenu({
 	meanMenuContainer: '.mobile-menu',
-	meanScreenWidth: "992"
+	meanScreenWidth: "991"
 });
 
 // One Page Nav
@@ -168,8 +168,8 @@ $(function(){
 	  {
 		breakpoint: 1024,
 		settings: {
-		  slidesToShow: 3,
-		  slidesToScroll: 3,
+		  slidesToShow: 4,
+		  slidesToScroll: 1,
 		  infinite: true,
 		  dots: false
 		}
@@ -177,7 +177,7 @@ $(function(){
 	  {
 		breakpoint: 991,
 		settings: {
-		  slidesToShow: 4,
+		  slidesToShow: 3,
 		  slidesToScroll: 1
 		}
 	  },
