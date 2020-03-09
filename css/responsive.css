@@ -268,6 +268,71 @@
 /* small mobile :320px. */
 @media (max-width: 767px) {
 
+    .dot-style .slick-dots li.slick-active button {
+        height: 20px;
+    }
+    .dot-style .slick-dots button {
+        height: 10px;
+        width: 4px;
+    }
+    .logo-area a img {
+        width: 175px;
+    }
+    .mean-container a.meanmenu-reveal {
+		right: 10px !important;
+	}
+    .single-slider{
+        padding: 0;
+    }
+    .slider-content h3 {
+        font-size: 13px;
+    }
+    .slider-content h1 {
+        font-size: 23px;
+    }
+    .slider-content p {
+        font-size: 12px;
+    }
+    .brand-btn {
+        font-size: 11px;
+        padding: 12px;
+    }
+    .section-title h3 {
+        font-size: 20px;
+    }
+    .portfolio-menu {
+        font-size: 7px;
+        display: flex;
+    }
+    .portfolio-menu button.active::after {
+        background: none;
+    }
+    .team-img img {
+        margin-left: 25%;
+    }
+    .team-details p {
+        padding: 5px 100px;
+    }
+    .slick-slide.slick-current.slick-active .team-details::before {
+        left: 33%;
+    }
+    .slick-slide.slick-current.slick-active .team-details::after {
+        right: 33%;
+    }
+    .testimonial-item {
+        padding: 0;
+        padding-bottom: 70px;
+        margin: 15px 10px;
+    }
+    .appoinment-area h3 {
+        font-size: 25px;
+    }
+    .week-schedule {
+        padding-right: 10px;
+    }
+    .map-content p {
+        font-size: 14px;
+    }
  
 }
  
@@ -275,53 +340,5 @@
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 .container {width:450px}
 
-.header-contact ul li {
-    margin-right: 12px;
-}
-.header-top-area ul li {
-    font-size: 13px;
-}
-.top-social-icon {
-    padding-top: 10px;
-}
-.single-slider{
-    padding: 0;
-}
-.slider-content h3 {
-    font-size: 18px;
-}
-.slider-content h1 {
-    font-size: 34px;
-}
-.slider-content p {
-    font-size: 14px;
-}
-.brand-btn {
-    font-size: 12px;
-}
-.portfolio-menu {
-    font-size: 12px;
-    display: flex;
-}
-.portfolio-menu button.active::after {
-    background: none;
-}
-.team-img img {
-    margin-left: 25%;
-}
-.team-details p {
-    padding: 5px 100px;
-}
-.slick-slide.slick-current.slick-active .team-details::before {
-    left: 33%;
-}
-.slick-slide.slick-current.slick-active .team-details::after {
-    right: 33%;
-}
-.testimonial-item {
-    padding: 0;
-    padding-bottom: 70px;
-    margin: 15px 10px;
-}
  
 }
