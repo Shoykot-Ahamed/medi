@@ -20,6 +20,9 @@
     .slider-content h3 {
         font-size: 28px;
     }
+    .slider-content.home-2 h3 {
+        font-size: 54px;
+    }
     .slider-content h1 {
         font-size: 55px;
     }

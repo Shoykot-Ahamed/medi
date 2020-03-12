@@ -187,6 +187,13 @@ $(function(){
 		  slidesToShow: 1,
 		  slidesToScroll: 1
 		}
+	  },
+	  {
+		breakpoint: 480,
+		settings: {
+		  slidesToShow: 1,
+		  slidesToScroll: 1
+		}
 	  }
 
 	]
@@ -312,6 +319,13 @@ $(function(){
 	  }
 
 	]
+  });
+
+  // pricing-active
+  $(document).ready(function(){
+	$(".price-active").click(function(){
+	  $("#show").toggle(1000);
+	});
   });
 
 })(jQuery);
