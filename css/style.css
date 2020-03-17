@@ -1,8 +1,8 @@
 /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
 
 /*
-  Theme Name: Name - Multipurpose HTML Template
-  Author: mdsalim400@gmail.com
+  Theme Name: Name - MediHome HTML Template
+  Author: shoykotahamed7736@gmail.com
   Support: admin@gmail.com
   Description: Creative  HTML5 template.
   Version: 1.0
@@ -11,15 +11,28 @@
 /* CSS Index
 -----------------------------------
 1. Theme default css
-2. header
-3. slider
+2. header-area
+3. slider-area
 4. about-area
-5. features-box
-6. department
-7. team
-8. video-area
-9. counter
-10. footer
+5. service-area
+6. portfolio-area
+7. team-area
+8. pricing-area
+9. appoinment-area
+10. blog-area
+11. client-area
+12. testimonial-area
+13. GIT-area
+14. footer-area
+15. page-title
+16. blog-area
+17. right-side
+18. pagination
+19. blog-details
+20. about-page
+21. service-page
+22. contact-page
+23. about-page
 */
 
 
@@ -337,7 +350,7 @@ label {
 }
 
 
-/* header-area */
+/* 2. header-area */
 	
 	/* header-top-area */
 	.header-top-area{
@@ -452,6 +465,7 @@ label {
 		height: 35px;
 		top: 0;
 		padding: 0;
+		background: #fff;
 	}
 	.header-top-area.theme-bg .search-form button i {
 		width: 33px;
@@ -565,7 +579,7 @@ label {
 	}
 
 
-/* slider-area */
+/* 3. slider-area */
 
 	.slider-area{
 		position: relative;
@@ -661,7 +675,7 @@ label {
 	}
 
 
-/* about-area */
+/* 4. about-area */
 
 	.section-title h3 span{
 		color: #0fb0ee;
@@ -773,7 +787,7 @@ label {
 		text-align: justify;
 	}
 
-/* service-area */
+/* 5. service-area */
 	
 	.gray-bg .section-title i {
 		background: #f6f6f6;
@@ -844,7 +858,7 @@ label {
 		color: #0fb0ee;
 	}
 
-/* portfolio-area */
+/* 6. portfolio-area */
 
 	.portfolio-area{
 		border-bottom: 1px solid #c1c1c1;
@@ -929,7 +943,7 @@ label {
 	}
 
 
-/* team-area */
+/* 7. team-area */
 	.team-area.gray-bg{
 		background: #eeeeee;
 	}
@@ -1056,51 +1070,35 @@ label {
 	.team-area .team-arrow.arrow-prev{
 		left: 40px;
 	}
-/* pricing-area */
+/* 8. pricing-area */
 
-	.active-button h6{
-		font-size: 14px;
-		font-weight: 400;
-		text-transform: capitalize;
-		margin-top: 10px;
+	ul, li {
+		margin: 0;
+		padding: 0;
+		list-style: none;
 	}
-	.active-button h6.active{
+	.toggle, .toggler {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 10px;
+	}
+
+	.toggler {
+		color: #999999;
+		transition: .2s;
+		font-weight: 400;
+		font-size: 14px;
+	}
+
+	.toggler--is-active {
 		color: #0fb0ee;
 	}
-	.active-button input[type="checkbox"]{
-		border: 1px solid #f6f6f6;
-		border-radius: 30px;
-		height: 38px;
-		width: 115px;
-		background: #e2f5fd;
-		margin: 0 20px;
+
+	.b {
+		display: block;
 		position: relative;
-		-webkit-appearance: none;
-		-webkit-box-shadow: inset 0 0 5px rgb(0,0,0,.2);
-		        box-shadow: inset 0 0 5px rgb(0,0,0,.2);
-		-webkit-transition: .5s;
-		-o-transition: .5s;
-		transition: .5s;
-		cursor: pointer;
 	}
-	.active-button input[type="checkbox"]::before{
-		content: '';
-		position: absolute;
-		border-radius: 50%;
-		height: 24px;
-		width: 24px;
-		-webkit-transition: .5s;
-		-o-transition: .5s;
-		transition: .5s;
-		-webkit-transform: scale(1.1);
-		    -ms-transform: scale(1.1);
-		        transform: scale(1.1);
-		background: #ffffff;
-		margin: 6px 11px;
-		-webkit-box-shadow: 0 2px 5px rgb(0,0,0,.2);
-		        box-shadow: 0 2px 5px rgb(0,0,0,.2);
-	}
-	.active-button input[type="checkbox"]::after{
+	.b::after {
 		content: '';
 		position: absolute;
 		border-radius: 50%;
@@ -1110,18 +1108,66 @@ label {
 		-o-transition: .5s;
 		transition: .5s;
 		-webkit-transform: scale(1.1);
-		    -ms-transform: scale(1.1);
-		        transform: scale(1.1);
+		-ms-transform: scale(1.1);
+		transform: scale(1.1);
 		background: #0fb0ee;
-		margin: 14px 19px;
+		margin: 10px -4px;
 		-webkit-box-shadow: 0 2px 5px rgb(0,0,0,.2);
-		        box-shadow: 0 2px 5px rgb(0,0,0,.2);
+		box-shadow: 0 2px 5px rgb(0,0,0,.2);
 	}
-	.active-button input:checked[type="checkbox"]::before{
-		right: 0;
+
+	.toggle {
+		position: relative;
+		width: 115px;
+		height: 38px;
+		border-radius: 100px;
+		background-color: #e2f5fd;
+		overflow: hidden;
+		box-shadow: inset 0 0 2px 1px rgba(0, 0, 0, 0.05);
 	}
-	.active-button input:checked[type="checkbox"]::after{
-		right: 0;
+
+	.check {
+		position: absolute;
+		display: block;
+		cursor: pointer;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		z-index: 6;
+	}
+
+	.check:checked ~ .switch {
+		right: 10px;
+		left: 66.5%;
+		transition: 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+		transition-property: left, right;
+		transition-delay: .08s, 0s;
+	}
+
+	.switch {
+		position: absolute;
+		left: 10px;
+		top: 5px;
+		bottom: 5px;
+		right: 66.5%;
+		background-color: #fff;
+		border-radius: 36px;
+		z-index: 1;
+		transition: 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+		transition-property: left, right;
+		transition-delay: 0s, .08s;
+		box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+	}
+	.pricing-section {
+		padding: 110px 0 150px 0;
+		float: left;
+		width: 100%;
+		text-align: center;
+	}
+	.hide{
+	display: none;
 	}
 	.single-price{
 		padding: 0px 30px;
@@ -1191,7 +1237,7 @@ label {
 		border-bottom: none;
 	}
 
-/* appoinment-area */
+/* 9. appoinment-area */
 	.appoinment-area {
 		position: relative;
 		left: 0;
@@ -1292,7 +1338,7 @@ label {
 		float: right;
 	}
 	
-/* blog-area */
+/* 10. blog-area */
 	.bc-head h5{
 		padding-bottom: 15px;
 	}
@@ -1438,7 +1484,7 @@ label {
 	}
 	
 	
-/* client-area */
+/* 11. client-area */
 
 	.client-active.brand-border {
 		margin: 0 90px;
@@ -1459,7 +1505,7 @@ label {
 		top: 280px;
 	}
 
-/* testimonial-area */
+/* 12. testimonial-area */
 
 	.testimonial-img img{
 		display: inline-block;
@@ -1476,7 +1522,7 @@ label {
 		bottom: 35px;
 	}
 
-/* GIT-area */
+/* 13. GIT-area */
 	.git-form label{
 		display: block;
 		text-transform: capitalize;
@@ -1535,7 +1581,7 @@ label {
 		font-size: 14px;
 	}
 
-/* footer-area */
+/* 14. footer-area */
 
 	.map-area{
 		position: relative;
@@ -1628,7 +1674,7 @@ label {
 
 /* blog-page */
 
-	/* page-title */
+	/* 15. page-title */
 	
 	.blog-head-area{
 		position: relative;
@@ -1655,7 +1701,7 @@ label {
 		color: #ffffff;
 	}
 
-	/* blog-area */
+	/* 16. blog-area */
 
 	.single-blog{
 		border-bottom: 1px solid #dfdfdf;
@@ -1699,8 +1745,6 @@ label {
 	audio {
 		width: 100%;
 	}
-
-
 	.blog-video{
 		position: relative;
 	}
@@ -1759,7 +1803,7 @@ label {
 		font-size: 15px;
 	}
 
-	/* right-side */
+	/* 17. right-side */
 	.search-box{
 		border: 3px solid #f4f4f4;
 		padding: 19px 22px;
@@ -1857,7 +1901,7 @@ label {
 		color: #ffffff;
 	}
 
-	/* pagination */
+	/* 18. pagination */
 
 	.pagination{
 		margin-left: 70px;
@@ -1890,7 +1934,7 @@ label {
 		background: #e6e6e6;
 	}
 
-/* blog-details */
+/* 19. blog-details */
 
 	.single-blog.details{
 		border-bottom: none;
@@ -2006,7 +2050,7 @@ label {
 	.post-comments-form form input:focus::-ms-input-placeholder, .post-comments-form form textarea:focus::-ms-input-placeholder{color: #0fb0ee; border: #0fb0ee;}
 	.post-comments-form form input:focus::placeholder,.post-comments-form form textarea:focus::placeholder{color: #0fb0ee; border: #0fb0ee;}
 
-/* about-page */
+/* 20. about-page */
 
 	/* we-about-area */
 
@@ -2026,7 +2070,7 @@ label {
 
 
 
-/* service-page */
+/* 21. service-page */
 	
 	.service-contact-area.slider-height{
 		-webkit-transform: skewY(0);
@@ -2063,7 +2107,7 @@ label {
 		border: 1px solid #e3e3e3;
 	}
 
-/* contact-page */
+/* 22. contact-page */
 
 	.git-area .section-title h1{
 		text-transform: capitalize;
@@ -2073,7 +2117,7 @@ label {
 		font-size: 36px;
 	}
 
-/* about-page */
+/* 23. about-page */
 
 	.brand-area.about{
 		-webkit-box-shadow: unset;

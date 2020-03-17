@@ -91,7 +91,6 @@
         margin: 15px 150px;
     }
 
-
 }
 
  
@@ -263,6 +262,9 @@
 		top: 0px;
 		transition: 0s;
 	}
+    .git-right .mb-55 {
+        margin-bottom: 30px;
+    }
 
 
 }

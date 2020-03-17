@@ -78,8 +78,9 @@ $('.portfolio-menu').on( 'click', 'button', function() {
 	percentPosition: false,
 	masonry: {
 	  // use outer width of grid-sizer for columnWidth
-	  columnWidth: '.grid-item',
+	  columnWidth: 1,
 	}
+	
   });
   
   //for menu active class
@@ -108,6 +109,10 @@ $.scrollUp({
 
 // WOW active
 new WOW().init();
+
+
+
+
 
 //active slide
 function mainSlider() {
@@ -324,8 +329,37 @@ $(function(){
   // pricing-active
   $(document).ready(function(){
 	$(".price-active").click(function(){
-	  $("#show").toggle(1000);
+	  $(".active-button").toggle(2000);
 	});
   });
+  var e = document.getElementById("filt-monthly"),
+  d = document.getElementById("filt-hourly"),
+  t = document.getElementById("switcher"),
+  m = document.getElementById("monthly"),
+  y = document.getElementById("hourly");
+
+e.addEventListener("click", function(){
+t.checked = false;
+e.classList.add("toggler--is-active");
+d.classList.remove("toggler--is-active");
+m.classList.remove("hide");
+y.classList.add("hide");
+});
+
+d.addEventListener("click", function(){
+t.checked = true;
+d.classList.add("toggler--is-active");
+e.classList.remove("toggler--is-active");
+m.classList.add("hide");
+y.classList.remove("hide");
+});
+
+t.addEventListener("click", function(){
+d.classList.toggle("toggler--is-active");
+e.classList.toggle("toggler--is-active");
+m.classList.toggle("hide");
+y.classList.toggle("hide");
+})
+
 
 })(jQuery);
