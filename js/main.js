@@ -288,78 +288,36 @@ $(function(){
 	]
   });
 
-// about-slide
-  $('.').slick({
-	dots: true,
-	arrows: true,
-	infinite: true,
-	prevArrow: '.arrow-prev',
-	nextArrow: '.arrow-next',
-	speed: 300,
-	slidesToShow: 1,
-	slidesToScroll: 1,
-	responsive: [
-	  {
-		breakpoint: 1024,
-		settings: {
-		  slidesToShow: 1,
-		  slidesToScroll: 1,
-		  infinite: true,
-		  dots: false
-		}
-	  },
-	  {
-		breakpoint: 991,
-		settings: {
-		  slidesToShow: 1,
-		  slidesToScroll: 1
-		}
-	  },
-	  {
-		breakpoint: 767,
-		settings: {
-		  slidesToShow: 1,
-		  slidesToScroll: 1
-		}
-	  }
-
-	]
-  });
-
   // pricing-active
-  $(document).ready(function(){
-	$(".price-active").click(function(){
-	  $(".active-button").toggle(2000);
+
+	var e = document.getElementById("filt-monthly"),
+	d = document.getElementById("filt-hourly"),
+	t = document.getElementById("switcher"),
+	m = document.getElementById("monthly"),
+	y = document.getElementById("hourly");
+
+	e.addEventListener("click", function(){
+	t.checked = false;
+	e.classList.add("toggler--is-active");
+	d.classList.remove("toggler--is-active");
+	m.classList.remove("hide");
+	y.classList.add("hide");
 	});
-  });
-  var e = document.getElementById("filt-monthly"),
-  d = document.getElementById("filt-hourly"),
-  t = document.getElementById("switcher"),
-  m = document.getElementById("monthly"),
-  y = document.getElementById("hourly");
 
-e.addEventListener("click", function(){
-t.checked = false;
-e.classList.add("toggler--is-active");
-d.classList.remove("toggler--is-active");
-m.classList.remove("hide");
-y.classList.add("hide");
-});
+	d.addEventListener("click", function(){
+	t.checked = true;
+	d.classList.add("toggler--is-active");
+	e.classList.remove("toggler--is-active");
+	m.classList.add("hide");
+	y.classList.remove("hide");
+	});
 
-d.addEventListener("click", function(){
-t.checked = true;
-d.classList.add("toggler--is-active");
-e.classList.remove("toggler--is-active");
-m.classList.add("hide");
-y.classList.remove("hide");
-});
-
-t.addEventListener("click", function(){
-d.classList.toggle("toggler--is-active");
-e.classList.toggle("toggler--is-active");
-m.classList.toggle("hide");
-y.classList.toggle("hide");
-})
+	t.addEventListener("click", function(){
+	d.classList.toggle("toggler--is-active");
+	e.classList.toggle("toggler--is-active");
+	m.classList.toggle("hide");
+	y.classList.toggle("hide");
+	})
 
 
 })(jQuery);
