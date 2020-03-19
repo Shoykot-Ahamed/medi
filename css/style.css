@@ -1072,170 +1072,170 @@ label {
 	}
 /* 8. pricing-area */
 
-	ul, li {
-		margin: 0;
-		padding: 0;
-		list-style: none;
-	}
-	.toggle, .toggler {
-	display: inline-block;
-	vertical-align: middle;
-	margin: 10px;
-	}
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.toggle, .toggler {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 10px;
+}
 
-	.toggler {
-		color: #999999;
-		transition: .2s;
-		font-weight: 400;
-		font-size: 14px;
-	}
+.toggler {
+    color: #999999;
+    transition: .2s;
+    font-weight: 400;
+    font-size: 14px;
+}
 
-	.toggler--is-active {
-		color: #0fb0ee;
-	}
+.toggler--is-active {
+    color: #0fb0ee;
+}
 
-	.b {
-		display: block;
-		position: relative;
-	}
-	.b::after {
-		content: '';
-		position: absolute;
-		border-radius: 50%;
-		height: 8px;
-		width: 8px;
-		-webkit-transition: .5s;
-		-o-transition: .5s;
-		transition: .5s;
-		-webkit-transform: scale(1.1);
-		-ms-transform: scale(1.1);
-		transform: scale(1.1);
-		background: #0fb0ee;
-		margin: 10px -4px;
-		-webkit-box-shadow: 0 2px 5px rgb(0,0,0,.2);
-		box-shadow: 0 2px 5px rgb(0,0,0,.2);
-	}
+.b {
+    display: block;
+    position: relative;
+}
+.b::after {
+	content: '';
+    position: absolute;
+    border-radius: 50%;
+    height: 8px;
+    width: 8px;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    background: #0fb0ee;
+    margin: 10px -4px;
+    -webkit-box-shadow: 0 2px 5px rgb(0,0,0,.2);
+    box-shadow: 0 2px 5px rgb(0,0,0,.2);
+}
 
-	.toggle {
-		position: relative;
-		width: 115px;
-		height: 38px;
-		border-radius: 100px;
-		background-color: #e2f5fd;
-		overflow: hidden;
-		box-shadow: inset 0 0 2px 1px rgba(0, 0, 0, 0.05);
-	}
+.toggle {
+    position: relative;
+    width: 115px;
+    height: 38px;
+    border-radius: 100px;
+    background-color: #e2f5fd;
+    overflow: hidden;
+    box-shadow: inset 0 0 2px 1px rgba(0, 0, 0, 0.05);
+}
 
-	.check {
-		position: absolute;
-		display: block;
-		cursor: pointer;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		opacity: 0;
-		z-index: 6;
-	}
+.check {
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 6;
+}
 
-	.check:checked ~ .switch {
-		right: 10px;
-		left: 66.5%;
-		transition: 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-		transition-property: left, right;
-		transition-delay: .08s, 0s;
-	}
+.check:checked ~ .switch {
+    right: 10px;
+    left: 66.5%;
+    transition: 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    transition-property: left, right;
+    transition-delay: .08s, 0s;
+}
 
-	.switch {
-		position: absolute;
-		left: 10px;
-		top: 5px;
-		bottom: 5px;
-		right: 66.5%;
-		background-color: #fff;
-		border-radius: 36px;
-		z-index: 1;
-		transition: 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-		transition-property: left, right;
-		transition-delay: 0s, .08s;
-		box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-	}
-	.pricing-section {
-		padding: 30px 0 0 0;
-		float: left;
-		width: 100%;
-		text-align: center;
-	}
-	.hide{
-	display: none;
-	}
-	.single-price{
-		padding: 0px 30px;
-	}
-	.single-price:hover{
-		background: #f6f6f6;
-	}
-	.single-price > i{
-		font-size: 49px;
-		color: #0fb0ee;
-		margin-bottom: 30px;
-		visibility: hidden;
-	}
-	.single-price:hover > i{
-		visibility: visible;
-	}
-	.price-title {
-		border-bottom: 1px solid #777777;
-	}
-	.single-price:hover .price-title {
-		border-bottom: 1px solid #555555;
-	}
-	.price-title h2{
-		font-weight: 400;
-		text-transform: capitalize;
-		color: #0fb0ee;
-	}
-	.price-title h5 {
-		font-weight: 400;
-		color: #0fb0ee;
-		padding-bottom: 15px;
-	}
-	.price-title input{
-		height: 50px;
-		width: 100%;
-		cursor: pointer;
-		background: #0fb0ee;
-		border: none;
-		font-size: 24px;
-		text-transform: uppercase;
-		color: #ffffff;
-	}
-	.price-title h6{
-		font-weight: 400;
-		font-size: 14px;
-		text-transform: unset;
-		color: #999999;
-		margin-top: 25px;
-		padding-bottom: 10px;
-	}
-	.price-details p{
-		border-top: 1px solid #e4e4e4;
-		border-bottom: 1px solid #b4b4b4;
-		margin: 0;
-		padding-top: 10px;
-		padding-bottom: 15px;
-	}
-	.single-price:hover .price-details p {
-		border-bottom: 1px solid #999999;
-		border-top: 1px solid #f6f6f6;
-	}
-	.price-details p:last-child{
-		border-bottom: none;
-		padding-bottom: 40px;
-	}
-	.single-price:hover .price-details p:last-child {
-		border-bottom: none;
-	}
+.switch {
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    bottom: 5px;
+    right: 66.5%;
+    background-color: #fff;
+    border-radius: 36px;
+    z-index: 1;
+    transition: 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    transition-property: left, right;
+    transition-delay: 0s, .08s;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+.pricing-section {
+    padding: 30px 0 0 0;
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+.hide{
+  display: none;
+}
+.single-price{
+    padding: 0px 30px;
+}
+.single-price:hover{
+    background: #f6f6f6;
+}
+.single-price > i{
+    font-size: 49px;
+    color: #0fb0ee;
+    margin-bottom: 30px;
+    visibility: hidden;
+}
+.single-price:hover > i{
+    visibility: visible;
+}
+.price-title {
+    border-bottom: 1px solid #777777;
+}
+.single-price:hover .price-title {
+    border-bottom: 1px solid #555555;
+}
+.price-title h2{
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #0fb0ee;
+}
+.price-title h5 {
+    font-weight: 400;
+    color: #0fb0ee;
+    padding-bottom: 15px;
+}
+.price-title input{
+    height: 50px;
+    width: 100%;
+    cursor: pointer;
+    background: #0fb0ee;
+    border: none;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.price-title h6{
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: unset;
+    color: #999999;
+    margin-top: 25px;
+    padding-bottom: 10px;
+}
+.price-details p{
+    border-top: 1px solid #e4e4e4;
+    border-bottom: 1px solid #b4b4b4;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+.single-price:hover .price-details p {
+    border-bottom: 1px solid #999999;
+    border-top: 1px solid #f6f6f6;
+}
+.price-details p:last-child{
+    border-bottom: none;
+    padding-bottom: 40px;
+}
+.single-price:hover .price-details p:last-child {
+    border-bottom: none;
+}
 
 /* 9. appoinment-area */
 	.appoinment-area {
