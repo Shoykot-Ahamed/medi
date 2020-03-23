@@ -116,6 +116,9 @@
     .slider-content h3 {
         font-size: 23px;
     }
+    .slider-content.home-2 h3 {
+        font-size: 39px;
+    }
     .slider-content h1 {
         font-size: 40px;
     }
@@ -150,9 +153,14 @@
         margin-bottom: 30px;
         line-height: 15px;
     }
+    .portfolio-menu {
+        text-align: center;
+    }
+    .portfolio-menu button {
+        display: inline-block;
+    }
     .portfolio-menu button.active::after {
-        width: 25px;
-        right: -5px;
+        background: none;
     }
     .team-img img {
         margin-left: 60px;
