@@ -126,7 +126,7 @@ function mainSlider() {
 		doAnimations($animatingElements);
 	});
 	BasicSlider.slick({
-		autoplay: false,
+		autoplay: true,
 		autoplaySpeed: 10000,
 		dots: true,
 		nav: false,
@@ -164,6 +164,8 @@ $(function(){
   // brand-active
   $('.client-active').slick({
 	dots: true,
+	autoplay: true,
+	autoplaySpeed: 10000,
 	arrows: false,
 	infinite: true,
 	speed: 300,
@@ -209,6 +211,8 @@ $(function(){
 	slidesToShow: 1,
 	slidesToScroll: 1,
 	arrows: false,
+	autoplay: true,
+	autoplaySpeed: 10000,
 	fade: true,
 	dots:true,
   });
@@ -216,6 +220,8 @@ $(function(){
   // team - active
   $('.team-active').slick({
 	dots: false,
+	autoplay: true,
+	autoplaySpeed: 10000,
 	arrows: true,
 	infinite: true,
 	prevArrow: '.arrow-prev',
@@ -253,6 +259,8 @@ $(function(){
   
   $('.team-active-2').slick({
 	dots: false,
+	autoplay: true,
+	autoplaySpeed: 10000,
 	arrows: true,
 	infinite: true,
 	prevArrow: '.arrow-prev',

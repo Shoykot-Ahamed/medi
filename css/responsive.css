@@ -259,17 +259,6 @@
     .footer-content .top-social-icon ul li {
         margin: 30px 5px 0;
     }
-	.mean-container a.meanmenu-reveal {
-		border: 1px solid #555555;
-		color: #555555;
-		top: 28px;
-        transition: none;
-        position: absolute;
-	}
-	.mean-container a.meanmenu-reveal.meanclose {
-		top: 0px;
-		transition: 0s;
-	}
     .git-right .mb-55 {
         margin-bottom: 30px;
     }
@@ -291,9 +280,6 @@
     .logo-area a img {
         width: 175px;
     }
-    .mean-container a.meanmenu-reveal {
-		right: 10px !important;
-	}
     .single-slider{
         padding: 0;
     }
